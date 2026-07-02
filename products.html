@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>My.Aame | Turtle Care Education</title>
+
+<meta name="description"
+content="My.Aame helps turtle parents raise healthier turtles through practical turtle care guides, educational resources and premium turtle products.">
+
+<link rel="icon" href="favicon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Inter,sans-serif;
+background:#F8FAF7;
+color:#222;
+}
+header{
+
+background:white;
+
+padding:20px 8%;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+box-shadow:0 2px 10px rgba(0,0,0,.05);
+
+}
+
+.logo{
+
+display:flex;
+
+align-items:center;
+
+gap:14px;
+
+font-family:"Playfair Display",serif;
+
+font-size:28px;
+
+font-weight:700;
+
+color:#1F5E3B;
+
+}
+
+.logo img{
+
+width:58px;
+
+}
+
+nav{
+
+display:flex;
+
+align-items:center;
+
+gap:30px;
+
+}
+
+nav a{
+
+text-decoration:none;
+
+color:#333;
+
+font-weight:600;
+
+}
+
+.hero{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:80px 8%;
+
+gap:80px;
+
+}
+
+.hero-text{
+
+max-width:560px;
+
+}
+
+.tag{
+
+display:inline-block;
+
+background:#E8F5EC;
+
+color:#1F5E3B;
+
+padding:10px 18px;
+
+border-radius:40px;
+
+font-weight:600;
+
+margin-bottom:25px;
+
+}
+
+.hero h1{
+
+font-family:"Playfair Display",serif;
+
+font-size:60px;
+
+line-height:1.15;
+
+margin-bottom:25px;
+
+}
+
+.hero p{
+
+font-size:20px;
+
+line-height:1.8;
+
+color:#555;
+
+margin-bottom:35px;
+
+}
+
+.buttons{
+
+display:flex;
+
+gap:18px;
+
+}
+
+.btn{
+
+background:#1F5E3B;
+
+color:white;
+
+padding:16px 34px;
+
+border-radius:12px;
+
+text-decoration:none;
+
+font-weight:600;
+
+}
+
+.secondary-btn{
+
+border:2px solid #1F5E3B;
+
+color:#1F5E3B;
+
+padding:16px 34px;
+
+border-radius:12px;
+
+text-decoration:none;
+
+font-weight:600;
+
+}
+
+.hero-image img{
+
+width:360px;
+
+border-radius:18px;
+
+box-shadow:0 25px 60px rgba(0,0,0,.15);
+
+}
+.resources{
+
+padding:90px 8%;
+
+background:white;
+
+}
+
+.resources h2{
+
+font-family:"Playfair Display",serif;
+
+font-size:46px;
+
+text-align:center;
+
+margin-bottom:15px;
+
+}
+
+.resources-subtitle{
+
+text-align:center;
+
+font-size:20px;
+
+color:#666;
+
+margin-bottom:60px;
+
+}
+
+.resources-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+gap:30px;
+
+}
+
+.resource-card{
+
+background:#F8FAF7;
+
+padding:35px;
+
+border-radius:18px;
+
+box-shadow:0 10px 30px rgba(0,0,0,.06);
+
+transition:.3s;
+
+}
+
+.resource-card:hover{
+
+transform:translateY(-8px);
+
+}
+
+.resource-card h3{
+
+font-family:"Playfair Display",serif;
+
+font-size:28px;
+
+margin-bottom:18px;
+
+}
+
+.resource-card p{
+
+line-height:1.8;
+
+color:#555;
+
+margin-bottom:25px;
+
+}
+
+.resource-card a{
+
+text-decoration:none;
+
+font-weight:600;
+
+color:#1F5E3B;
+
+}
+.services{
+
+padding:90px 8%;
+
+background:white;
+
+text-align:center;
+
+}
+
+.services h2{
+
+font-family:"Playfair Display",serif;
+
+font-size:46px;
+
+margin-bottom:15px;
+
+}
+
+.services-subtitle{
+
+font-size:20px;
+
+color:#666;
+
+margin-bottom:60px;
+
+}
+
+.services-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:30px;
+
+}
+
+.service-card{
+
+background:#F8FAF7;
+
+padding:35px;
+
+border-radius:18px;
+
+box-shadow:0 10px 30px rgba(0,0,0,.05);
+
+transition:.3s;
+
+}
+
+.service-card:hover{
+
+transform:translateY(-8px);
+
+}
+
+.service-card h3{
+
+font-family:"Playfair Display",serif;
+
+font-size:28px;
+
+margin-bottom:15px;
+
+}
+
+.service-card p{
+
+line-height:1.8;
+
+color:#555;
+
+}
+.featured-guide{
+
+padding:90px 8%;
+
+display:flex;
+
+align-items:center;
+
+justify-content:space-between;
+
+gap:80px;
+
+background:#F8FAF7;
+
+}
+
+.featured-guide-image img{
+
+width:340px;
+
+border-radius:18px;
+
+box-shadow:0 25px 60px rgba(0,0,0,.15);
+
+}
+
+.featured-guide-text{
+
+max-width:550px;
+
+}
+
+.featured-guide-text h2{
+
+font-family:"Playfair Display",serif;
+
+font-size:48px;
+
+margin:20px 0;
+
+}
+
+.featured-guide-text p{
+
+font-size:20px;
+
+line-height:1.8;
+
+color:#555;
+
+margin-bottom:35px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<a href="index.html" class="logo">
+
+<img src="logo1.png" alt="My.Aame Logo">
+
+<span>My.Aame</span>
+
+</a>
+
+<nav>
+
+<a href="index.html">Home</a>
+
+<a href="turtle-emergency-manual.html">Books</a>
+
+<a href="#">Products</a>
+
+<a href="#">About</a>
+
+<a href="#">Contact</a>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div class="hero-text">
+
+<span class="tag">
+
+🛒 Premium Turtle Products
+
+</span>
+
+<h1>
+
+Thoughtfully Designed Products for Healthier Turtles.
+
+</h1>
+
+<p>
+
+We're building a collection of premium turtle products focused on safety, enrichment, water quality and better everyday turtle care.
+
+</p>
+
+<div class="buttons">
+
+<a class="btn" href="#">
+
+Coming Soon
+
+</a>
+
+<a class="secondary-btn" href="#">
+
+Join the Waitlist
+
+</a>
+
+</div>
+
+</div>
+
+<div class="hero-image">
+
+<img src="book-cover.png" alt="Premium Turtle Products">
+
+</div>
+
+</section>
+
+<section class="resources">
+
+<h2>Explore My.Aame</h2>
+
+<p class="resources-subtitle">
+
+Everything you need to become a confident turtle parent.
+
+</p>
+
+<div class="resources-grid">
+
+<div class="resource-card">
+
+<h3>📘 Turtle Care Guides</h3>
+
+<p>
+
+Practical books and digital guides to help you confidently care for your turtle.
+
+</p>
+
+<a href="turtle-emergency-manual.html">
+
+Explore Books →
+
+</a>
+
+</div>
+
+<div class="resource-card">
+
+<h3>🛒 Premium Products</h3>
+
+<p>
+
+Carefully designed turtle products built with safety and practicality in mind.
+
+</p>
+
+<a class="btn" href="#">
+
+Browse Products
+
+</a>
+
+</div>
+
+<div class="resource-card">
+
+<h3>🎥 Learn for Free</h3>
+
+<p>
+
+Watch educational videos, tips and tutorials on YouTube.
+
+</p>
+
+<a href="https://www.youtube.com/@MyAameofficial" target="_blank">
+
+Watch Videos →
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+<section class="featured-guide">
+
+<div class="featured-guide-image">
+
+<img src="book-cover.png" alt="The Turtle Parent's Emergency Manual">
+
+</div>
+
+<div class="featured-guide-text">
+
+<span class="tag">
+📘 Featured Guide
+</span>
+
+<h2>The Turtle Parent's Emergency Manual</h2>
+
+<p>
+
+Recognise illnesses early, avoid costly mistakes and confidently care for your turtle with practical, easy-to-follow guidance.
+
+</p>
+
+<a class="btn" href="turtle-emergency-manual.html">
+
+Learn More →
+
+</a>
+
+</div>
+
+</section>
+</body>
+
+</html>
