@@ -90,6 +90,41 @@ color:#333;
 
 font-weight:600;
 
+transition:.3s;
+
+position:relative;
+
+}
+nav a:hover{
+
+color:#1F5E3B;
+
+}
+
+nav a::after{
+
+content:"";
+
+position:absolute;
+
+left:0;
+
+bottom:-6px;
+
+width:0;
+
+height:2px;
+
+background:#1F5E3B;
+
+transition:.3s;
+
+}
+
+nav a:hover::after{
+
+width:100%;
+
 }
 
 .hero{
@@ -100,7 +135,7 @@ justify-content:space-between;
 
 align-items:center;
 
-padding:80px 8%;
+padding:100px 8% 120px;
 
 gap:80px;
 
@@ -108,7 +143,7 @@ gap:80px;
 
 .hero-text{
 
-max-width:560px;
+max-width:620px;
 
 }
 
@@ -116,17 +151,21 @@ max-width:560px;
 
 display:inline-block;
 
-background:#E8F5EC;
+background:#EAF6ED;
 
 color:#1F5E3B;
 
-padding:10px 18px;
+padding:10px 20px;
 
-border-radius:40px;
+border-radius:50px;
+
+font-size:15px;
 
 font-weight:600;
 
-margin-bottom:25px;
+letter-spacing:.3px;
+
+margin-bottom:22px;
 
 }
 
@@ -134,7 +173,7 @@ margin-bottom:25px;
 
 font-family:"Playfair Display",serif;
 
-font-size:60px;
+font-size:52px;
 
 line-height:1.15;
 
@@ -270,29 +309,34 @@ margin-bottom:60px;
 
 display:grid;
 
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+grid-template-columns:repeat(3,1fr);
 
 gap:30px;
+margin-top:60px;
 
 }
 
 .resource-card{
 
-background:#F8FAF7;
+background:white;
 
-padding:35px;
+padding:40px;
 
-border-radius:18px;
+border-radius:20px;
 
-box-shadow:0 10px 30px rgba(0,0,0,.06);
+box-shadow:0 15px 40px rgba(0,0,0,.06);
 
-transition:.3s;
+transition:.35s;
+
+border:1px solid #EEF3EE;
 
 }
 
 .resource-card:hover{
 
-transform:translateY(-8px);
+transform:translateY(-10px);
+
+box-shadow:0 25px 55px rgba(0,0,0,.12);
 
 }
 
@@ -667,13 +711,13 @@ color:#1F5E3B;
 
 <a href="learn.html">Learn</a>
 
-<a href="turtle-emergency-manual.html">Books</a>
+<a href="turtle-emergency-manual.html">Guides</a>
 
 <a href="products.html">Products</a>
 
-<a href="about.html">About</a>
+<a href="contact.html">Consultation</a>
 
-<a href="contact.html">Contact</a>
+<a href="about.html">About</a>
 
 </nav>
 
@@ -786,11 +830,11 @@ My.Aame was created to change that through practical education, trusted guidance
 </section>
 <section class="resources">
 
-<h2>Explore My.Aame</h2>
+<h2>Everything You Need to Become a Better Turtle Parent</h2>
 
 <p class="resources-subtitle">
 
-Everything you need to become a confident turtle parent.
+Whether you're buying your first turtle or caring for one you've loved for years, My.Aame brings together trusted education, practical tools and personal guidance—all in one place.
 
 </p>
 
@@ -802,13 +846,13 @@ Everything you need to become a confident turtle parent.
 
 <p>
 
-Practical books and digital guides to help you confidently care for your turtle.
+Practical, easy-to-follow digital guides written to help you prevent mistakes and care for your turtle with confidence.
 
 </p>
 
 <a href="turtle-emergency-manual.html">
 
-Explore Books →
+Explore Guides →
 
 </a>
 
@@ -816,11 +860,11 @@ Explore Books →
 
 <div class="resource-card">
 
-<h3>🛒 Premium Products</h3>
+<h3>🛒 Recommended Products</h3>
 
 <p>
 
-Carefully designed turtle products built with safety and practicality in mind.
+Products carefully selected and tested to improve your turtle's health, habitat and daily care.
 
 </p>
 
@@ -834,17 +878,71 @@ Browse Products →
 
 <div class="resource-card">
 
-<h3>🎥 Learn for Free</h3>
+<h3>🎥 Free Learning</h3>
 
 <p>
 
-Watch educational videos, tips and tutorials on YouTube.
+Watch free turtle care videos, practical tips and educational content on YouTube.
 
 </p>
 
-<a href="https://www.youtube.com/@MyAameofficial" target="_blank">
+<a href="learn.html">
 
-Watch Videos →
+Start Learning →
+
+</a>
+
+</div>
+
+<div class="resource-card">
+
+<h3>💬 Personal Consultation</h3>
+
+<p>
+
+Need personal guidance? Book a one-to-one WhatsApp consultation directly with Ram.
+
+</p>
+
+<a href="contact.html">
+
+Book Consultation →
+
+</a>
+
+</div>
+
+<div class="resource-card">
+
+<h3>❤️ Support Our Mission</h3>
+
+<p>
+
+Help us create more free turtle education, rescue awareness and practical guides for turtle parents.
+
+</p>
+
+<a href="contact.html">
+
+Support My.Aame →
+
+</a>
+
+</div>
+
+<div class="resource-card">
+
+<h3>📥 My Library</h3>
+
+<p>
+
+Already purchased a guide? Access your downloads, updates and future resources from one place.
+
+</p>
+
+<a href="contact.html">
+
+Open Library →
 
 </a>
 
@@ -867,17 +965,29 @@ Watch Videos →
 📘 Featured Guide
 </span>
 
-<h2>The Turtle Parent's Emergency Manual</h2>
+<h2>
+
+The Turtle Parent's Emergency Manual
+
+</h2>
+
+<p style="color:#1F5E3B;font-weight:700;font-size:18px;margin-bottom:18px;">
+
+Digital eBook • Instant Download • ₹599
+
+</p>
 
 <p>
 
-Recognise illnesses early, avoid costly mistakes and confidently care for your turtle with practical, easy-to-follow guidance.
+Stop guessing.
+
+Learn how to recognise illnesses early, avoid common mistakes, respond to emergencies and care for your turtle with confidence using practical, easy-to-follow guidance.
 
 </p>
 
 <a class="btn" href="turtle-emergency-manual.html">
 
-Learn More →
+View the Guide →
 
 </a>
 
@@ -894,17 +1004,23 @@ Learn More →
 
 <div class="founder-text">
 
-<h2>Meet the Founder</h2>
+<h2>A Personal Note from Ram</h2>
 
-<h3>Ramkumar K</h3>
+<h3>Founder, My.Aame</h3>
 
 <p>
 
-Hi, I'm Ramkumar K, founder of My.Aame.
+<p>
 
-My mission is to help turtle parents raise healthier turtles through practical education, trusted products and evidence-based guidance.
+Thank you for visiting My.Aame.
 
-Everything you see on this platform has been created with one goal—making turtle care simpler, safer and easier for every turtle parent.
+I built this platform because I believe every turtle deserves the chance to live a healthier life, and that starts with giving turtle parents the right knowledge.
+
+Whether you're reading one of my guides, booking a consultation or simply learning through our free resources, I'm grateful you're here.
+
+I hope My.Aame becomes a place you can always trust whenever you need help caring for your turtle.
+
+</p>
 
 </p>
 
