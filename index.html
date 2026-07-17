@@ -238,23 +238,29 @@ flex-wrap:wrap;
 
 .btn{
 
-display:inline-block;
+display:inline-flex;
+align-items:center;
+justify-content:center;
 
 background:#1F5E3B;
 
-color:white;
+color:#fff;
 
-padding:18px 36px;
+padding:18px 40px;
 
-border-radius:12px;
+border-radius:999px;
 
 text-decoration:none;
 
-font-weight:600;
+font-weight:700;
 
-transition:all .3s ease;
+font-size:16px;
 
-box-shadow:0 10px 25px rgba(31,94,59,.18);
+letter-spacing:.3px;
+
+transition:all .25s ease;
+
+box-shadow:0 14px 35px rgba(31,94,59,.20);
 
 }
 
@@ -279,9 +285,9 @@ transition:all .3s ease;
 }
 .btn:hover{
 
-transform:translateY(-3px);
+transform:translateY(-4px);
 
-box-shadow:0 18px 35px rgba(31,94,59,.28);
+box-shadow:0 22px 45px rgba(31,94,59,.30);
 
 }
 
@@ -342,10 +348,17 @@ margin-bottom:35px;
 
 display:grid;
 
-grid-template-columns:repeat(3,1fr);
+grid-template-columns:repeat(2,minmax(320px,1fr));
 
-gap:30px;
+gap:36px;
+
 margin-top:60px;
+
+max-width:1100px;
+
+margin-left:auto;
+
+margin-right:auto;
 
 }
 
@@ -485,7 +498,7 @@ color:#555;
 }
 .featured-guide{
 
-padding:70px 8%;
+padding:100px 8%;
 
 display:flex;
 
@@ -550,7 +563,7 @@ margin-bottom:35px;
 }
 .founder{
 
-padding:90px 8%;
+padding:110px 8%;
 
 display:flex;
 
@@ -741,7 +754,7 @@ color:#1F5E3B;
 
 .support{
 
-padding:90px 8%;
+padding:110px 8%;
 
 background:#F3F8F4;
 
@@ -836,39 +849,37 @@ margin-top:20px;
 
 <h1>
 
-Hi, I'm Ramkumar K.<br>
-
-Helping Turtle Parents Raise Healthier Turtles.
+Helping Turtle Parents Raise Healthier, Happier Turtles.
 
 </h1>
+
 <div class="hero-role">
 
-Founder • Turtle Educator • Author
+Founded by Ramkumar K • Trusted by 16K+ Turtle Parents
 
 </div>
 <p>
 
-Whether you're a first-time turtle parent or you've cared for turtles for years, you're welcome here.
-
-I've built My.Aame to give you practical guidance, trusted resources and honest advice that helps you care for your turtle with confidence.
+Trusted turtle guides, practical consultations, carefully designed products and honest education—everything you need to raise a healthier turtle.
 
 </p>
 <p class="mission">
 
-"Every turtle deserves a parent who knows better. If I can help create that parent, I've done my job."
+Every turtle deserves a parent who knows better.
 
 </p>
+
 <div class="buttons">
 
 <a class="btn" href="turtle-emergency-manual.html">
 
-📘 Buy the Emergency Manual
+Buy the Emergency Manual
 
 </a>
 
 <a class="secondary-btn" href="contact.html">
 
-💬 Book a WhatsApp Consultation
+Book a WhatsApp Consultation
 
 </a>
 
@@ -884,49 +895,7 @@ I've built My.Aame to give you practical guidance, trusted resources and honest 
 
 </section>
 
-<section class="mission">
 
-<div class="mission-content">
-
-<span class="tag">
-
-🌿 Why My.Aame Exists
-
-</span>
-
-<h2>
-
-Because Every Turtle Deserves a Better Chance.
-
-</h2>
-
-<p>
-
-Every year, countless turtles suffer—not because their owners don't care, but because they were never taught the right way to care for them.
-
-</p>
-
-<p>
-
-My.Aame was created to change that through practical education, trusted guidance, carefully designed products and honest support for turtle parents.
-
-</p>
-
-<p class="mission-quote">
-
-"Every turtle deserves a parent who knows better. If I can help create that parent, I've done my job."
-
-</p>
-
-<p class="mission-sign">
-
-— Ramkumar K
-
-</p>
-
-</div>
-
-</section>
 <section class="resources">
 
 <h2>Everything You Need to Become a Better Turtle Parent</h2>
@@ -939,7 +908,7 @@ Whether you're buying your first turtle or caring for one you've loved for years
 
 <div class="resources-grid">
 
-<div class="resource-card">
+<div class="resource-card"> 
 
 <h3>📘 Turtle Care Guides</h3>
 
@@ -1011,42 +980,6 @@ Book Consultation →
 
 </div>
 
-<div class="resource-card">
-
-<h3>❤️ Support Our Mission</h3>
-
-<p>
-
-Help us create more free turtle education, rescue awareness and practical guides for turtle parents.
-
-</p>
-
-<a href="contact.html">
-
-Support Turtle Education →
-
-</a>
-
-</div>
-
-<div class="resource-card">
-
-<h3>📥 My Library</h3>
-
-<p>
-
-Already purchased a guide? Access your downloads, updates and future resources from one place.
-
-</p>
-
-<a href="contact.html">
-
-Open Library →
-
-</a>
-
-</div>
-
 </div>
 
 </section>
@@ -1093,9 +1026,52 @@ Written in simple language with practical, step-by-step guidance that every turt
 
 <a class="btn" href="turtle-emergency-manual.html">
 
-📘 View Book Details →
+View Book Details →
 
 </a>
+
+</div>
+
+</section>
+<section class="mission">
+
+<div class="mission-content">
+
+<span class="tag">
+
+🌿 Why My.Aame Exists
+
+</span>
+
+<h2>
+
+Because Every Turtle Deserves a Better Chance.
+
+</h2>
+
+<p>
+
+Every year, countless turtles suffer—not because their owners don't care, but because they were never taught the right way to care for them.
+
+</p>
+
+<p>
+
+My.Aame was created to change that through practical education, trusted guidance, carefully designed products and honest support for turtle parents.
+
+</p>
+
+<p class="mission-quote">
+
+"Every turtle deserves a parent who knows better. If I can help create that parent, I've done my job."
+
+</p>
+
+<p class="mission-sign">
+
+— Ramkumar K
+
+</p>
 
 </div>
 
