@@ -21,6 +21,80 @@ content="My.Aame helps turtle parents raise healthier turtles through practical 
 
 <style>
 
+.tank-service{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+gap:80px;
+
+padding:100px 8%;
+
+background:#F8FAF7;
+
+}
+
+.tank-service-text{
+
+max-width:620px;
+
+}
+
+.tank-service-text h2{
+
+font-family:"Playfair Display",serif;
+
+font-size:48px;
+
+margin:20px 0;
+
+}
+
+.tank-service-text p{
+
+font-size:20px;
+
+line-height:1.8;
+
+color:#555;
+
+margin-bottom:30px;
+
+}
+
+.service-features{
+
+list-style:none;
+
+padding:0;
+
+margin-bottom:35px;
+
+}
+
+.service-features li{
+
+font-size:18px;
+
+margin-bottom:14px;
+
+color:#333;
+
+}
+
+.tank-service-image img{
+
+width:360px;
+
+border-radius:18px;
+
+box-shadow:0 20px 50px rgba(0,0,0,.15);
+
+}
+
 *{
 margin:0;
 padding:0;
@@ -386,6 +460,77 @@ gap:80px;
 background:#F8FAF7;
 
 }
+.featured-product{
+
+display:flex;
+
+align-items:center;
+
+justify-content:space-between;
+
+gap:80px;
+
+padding:100px 8%;
+
+background:white;
+
+}
+
+.featured-product-image img{
+
+width:320px;
+
+border-radius:18px;
+
+box-shadow:0 25px 60px rgba(0,0,0,.15);
+
+}
+
+.featured-product-text{
+
+max-width:620px;
+
+}
+
+.featured-product-text h2{
+
+font-family:"Playfair Display",serif;
+
+font-size:48px;
+
+margin:20px 0;
+
+}
+
+.featured-product-text p{
+
+font-size:20px;
+
+line-height:1.8;
+
+color:#555;
+
+margin-bottom:30px;
+
+}
+
+.product-features{
+
+list-style:none;
+
+margin-bottom:35px;
+
+}
+
+.product-features li{
+
+margin-bottom:14px;
+
+font-size:18px;
+
+color:#333;
+
+}
 
 .featured-guide-image img{
 
@@ -424,7 +569,166 @@ color:#555;
 margin-bottom:35px;
 
 }
+.tank-service{
 
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+gap:80px;
+
+padding:100px 8%;
+
+background:#F8FAF7;
+
+}
+
+.tank-service-text{
+
+max-width:620px;
+
+}
+
+.tank-service-text h2{
+
+font-family:"Playfair Display",serif;
+
+font-size:48px;
+
+margin:20px 0;
+
+}
+
+.tank-service-text p{
+
+font-size:20px;
+
+line-height:1.8;
+
+color:#555;
+
+margin-bottom:30px;
+
+}
+
+.service-features{
+
+list-style:none;
+
+padding:0;
+
+margin-bottom:35px;
+
+}
+
+.service-features li{
+
+font-size:18px;
+
+margin-bottom:14px;
+
+color:#333;
+
+}
+
+.tank-service-image img{
+
+width:360px;
+
+border-radius:18px;
+
+box-shadow:0 20px 50px rgba(0,0,0,.15);
+
+}
+footer{
+
+background:#173F2D;
+
+padding:35px;
+
+text-align:center;
+
+color:white;
+
+font-size:16px;
+
+}
+.featured-product{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+gap:80px;
+
+padding:100px 8%;
+
+background:#ffffff;
+
+}
+
+.featured-product-image img{
+
+width:330px;
+
+border-radius:18px;
+
+box-shadow:0 20px 50px rgba(0,0,0,.15);
+
+}
+
+.featured-product-text{
+
+max-width:620px;
+
+}
+
+.featured-product-text h2{
+
+font-family:"Playfair Display",serif;
+
+font-size:48px;
+
+margin:20px 0;
+
+}
+
+.featured-product-text p{
+
+font-size:20px;
+
+line-height:1.8;
+
+color:#555;
+
+margin-bottom:30px;
+
+}
+
+.product-features{
+
+list-style:none;
+
+margin-bottom:35px;
+
+padding:0;
+
+}
+
+
+.product-features li{
+
+font-size:18px;
+
+margin-bottom:14px;
+
+color:#333;
+
+}
 </style>
 
 </head>
@@ -450,8 +754,6 @@ margin-bottom:35px;
 <a href="guides.html">Guides</a>
 
 <a href="products.html">Products</a>
-
-<a href="support.html">Support</a>
 
 <a href="support.html">Support</a>
 
@@ -487,74 +789,241 @@ Explore Products
 
 <div class="hero-image">
 
-<img src="assets/images/products-hero.jpg" alt="Turtle care products">
+<img src="products-hero.png" alt="My.Aame Turtle Products">
 
 </div>
 
 </section>
-<section class="resources">
 
-<h2>Products We're Building</h2>
+<section class="featured-product" id="featured-product">
 
-<p class="resources-subtitle">
+<div class="featured-product-image">
 
-Designed to make turtle care simpler, safer and more enjoyable.
-
-</p>
-
-<div class="resources-grid">
-
-<div class="resource-card">
-
-<h3>🐢 Premium Basking Platform</h3>
-
-<p>
-
-A spacious, sturdy basking platform designed with turtle health and safety in mind.
-
-</p>
+<img src="book-cover.png" alt="The Turtle Parent's Emergency Manual">
 
 </div>
 
-<div class="resource-card">
+<div class="featured-product-text">
 
-<h3>☀️ UVB & Lighting</h3>
+<span class="tag">
+Featured Guide
+</span>
+
+<h2>
+The Turtle Parent's Emergency Manual
+</h2>
 
 <p>
-
-Recommended lighting solutions and future My.Aame accessories for proper basking.
-
+A practical guide created to help turtle parents identify common health problems, avoid costly mistakes, and make confident care decisions. Written using real-world experience and research, it's designed to be the guide you'll keep coming back to whenever something doesn't seem right.
 </p>
+
+<ul class="product-features">
+
+<li>✔ Covers common health emergencies</li>
+
+<li>✔ Beginner-friendly explanations</li>
+
+<li>✔ Practical care checklists</li>
+
+<li>✔ Instant digital download</li>
+
+</ul>
+
+<a href="#" class="btn">
+Get Your Copy
+</a>
 
 </div>
 
-<div class="resource-card">
+</section>
+<section class="tank-service">
 
-<h3>💧 Water Care</h3>
+<div class="tank-service-text">
+
+<span class="tag">
+Custom Service
+</span>
+
+<h2>
+Complete Turtle Tank Setup Service
+</h2>
 
 <p>
-
-Products and tools to help maintain clean, healthy water for aquatic turtles.
-
+Creating the right habitat can be confusing. My.Aame offers custom-built basking platforms, professionally designed canister filter systems, and personalized setup guidance to help your turtle thrive in a safe, healthy environment.
 </p>
+
+<ul class="service-features">
+
+<li>✔ Custom basking platforms</li>
+
+<li>✔ Canister filter setup</li>
+
+<li>✔ Personalized recommendations</li>
+
+<li>✔ Available in Bangalore</li>
+
+</ul>
+
+<a href="contact.html" class="btn">
+Request a Consultation
+</a>
 
 </div>
 
-<div class="resource-card">
+<div class="tank-service-image">
 
-<h3>📦 Turtle Care Kits</h3>
+<img src="consultation.png" alt="Complete Turtle Tank Setup Service">
+
+</div>
+
+</section>
+<section class="gear-section">
+
+<h2>Recommended Turtle Gear</h2>
+
+<p class="gear-subtitle">
+Products I personally recommend after years of keeping and rescuing turtles.
+</p>
+
+<div class="gear-grid">
+
+<div class="gear-card">
+
+<h3>UVB Lighting</h3>
 
 <p>
-
-Curated starter kits to help new turtle parents provide the best care from day one.
-
+Proper UVB lighting is essential for healthy shell growth, bone development, and long-term wellbeing.
 </p>
+
+<a href="#">View Recommendation →</a>
+
+</div>
+
+<div class="gear-card">
+
+<h3>Canister Filters</h3>
+
+<p>
+Reliable filtration systems that keep turtle tanks cleaner, healthier, and easier to maintain.
+</p>
+
+<a href="#">View Recommendation →</a>
+
+</div>
+
+<div class="gear-card">
+
+<h3>Aquarium Heaters</h3>
+
+<p>
+Carefully selected heaters to maintain safe and stable water temperatures throughout the year.
+</p>
+
+<a href="#">View Recommendation →</a>
 
 </div>
 
 </div>
 
 </section>
+.gear-section{
+
+padding:100px 8%;
+
+background:white;
+
+text-align:center;
+
+}
+
+.gear-section h2{
+
+font-family:"Playfair Display",serif;
+
+font-size:46px;
+
+margin-bottom:15px;
+
+}
+
+.gear-subtitle{
+
+font-size:20px;
+
+color:#666;
+
+margin-bottom:60px;
+
+}
+
+.gear-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+gap:30px;
+
+}
+
+.gear-card{
+
+background:#F8FAF7;
+
+padding:35px;
+
+border-radius:18px;
+
+box-shadow:0 10px 30px rgba(0,0,0,.06);
+
+transition:.3s;
+
+}
+
+.gear-card:hover{
+
+transform:translateY(-8px);
+
+}
+
+.gear-card h3{
+
+font-family:"Playfair Display",serif;
+
+font-size:28px;
+
+margin-bottom:18px;
+
+}
+
+.gear-card p{
+
+line-height:1.8;
+
+color:#555;
+
+margin-bottom:25px;
+
+}
+
+.gear-card a{
+
+text-decoration:none;
+
+font-weight:600;
+
+color:#1F5E3B;
+
+}
+<footer>
+
+<p>
+
+© 2026 My.Aame • Helping Turtle Parents Raise Healthier Turtles.
+
+</p>
+
+</footer>
 
 </body>
 
