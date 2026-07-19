@@ -7,10 +7,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>My.Aame | Turtle Care Education</title>
+<title>Learn Turtle Care | Red-Eared Slider Guides, Health & Setup | My.Aame</title>
 
 <meta name="description"
-content="My.Aame helps turtle parents raise healthier turtles through practical turtle care guides, educational resources and premium turtle products.">
+content="Learn turtle care with expert Red-Eared Slider guides on feeding, water quality, basking, UVB lighting, turtle health, tank setup and emergency care.">
 
 <link rel="icon" href="favicon.png">
 
@@ -176,6 +176,15 @@ text-decoration:none;
 
 font-weight:600;
 
+transition:.3s;
+
+}
+.btn:hover{
+
+background:#17472D;
+
+transform:translateY(-2px);
+
 }
 
 .secondary-btn{
@@ -247,21 +256,25 @@ gap:30px;
 
 .resource-card{
 
-background:#F8FAF7;
+background:white;
 
 padding:35px;
 
 border-radius:18px;
 
-box-shadow:0 10px 30px rgba(0,0,0,.06);
+box-shadow:0 15px 35px rgba(0,0,0,.08);
 
-transition:.3s;
+border:1px solid #E6ECE7;
+
+transition:all .3s ease;
 
 }
 
 .resource-card:hover{
 
-transform:translateY(-8px);
+transform:translateY(-10px);
+
+box-shadow:0 20px 45px rgba(0,0,0,.12);
 
 }
 
@@ -425,6 +438,198 @@ margin-bottom:35px;
 
 }
 
+.featured-guides{
+
+padding:90px 8%;
+
+background:#F8FAF7;
+
+text-align:center;
+
+}
+
+.featured-guides h2{
+
+font-family:"Playfair Display",serif;
+
+font-size:46px;
+
+margin-bottom:15px;
+
+}
+
+.featured-subtitle{
+
+font-size:20px;
+
+color:#666;
+
+margin-bottom:60px;
+
+}
+
+.featured-guides-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+gap:30px;
+
+}
+
+.guide-card{
+
+background:white;
+
+padding:35px;
+
+border-radius:18px;
+
+border:1px solid #E6ECE7;
+
+box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+transition:all .3s ease;
+
+}
+
+.guide-card:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 20px 45px rgba(0,0,0,.12);
+
+}
+
+.guide-card h3{
+
+font-family:"Playfair Display",serif;
+
+font-size:28px;
+
+margin-bottom:18px;
+
+}
+
+.guide-card p{
+
+line-height:1.8;
+
+color:#555;
+
+margin-bottom:25px;
+
+}
+
+.guide-card a{
+
+text-decoration:none;
+
+font-weight:600;
+
+color:#1F5E3B;
+
+}
+
+.search-library{
+
+padding:90px 8%;
+
+background:white;
+
+text-align:center;
+
+}
+
+.search-library h2{
+
+font-family:"Playfair Display",serif;
+
+font-size:46px;
+
+margin-bottom:15px;
+
+}
+
+.search-library p{
+
+font-size:20px;
+
+color:#666;
+
+max-width:700px;
+
+margin:0 auto 40px;
+
+line-height:1.8;
+
+}
+
+.search-box{
+
+display:flex;
+
+justify-content:center;
+
+gap:15px;
+
+flex-wrap:wrap;
+
+}
+
+.search-box input{
+
+width:500px;
+
+max-width:100%;
+
+padding:18px 22px;
+
+border:1px solid #D9E4DD;
+
+border-radius:12px;
+
+font-size:17px;
+
+outline:none;
+
+}
+
+.search-box input:focus{
+
+border-color:#1F5E3B;
+
+}
+
+.search-box button{
+
+background:#1F5E3B;
+
+color:white;
+
+padding:18px 28px;
+
+border:none;
+
+border-radius:12px;
+
+font-size:16px;
+
+font-weight:600;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+.search-box button:hover{
+
+background:#17472D;
+
+}
+
 </style>
 
 </head>
@@ -503,7 +708,7 @@ Emergency Manual
 
 <div class="hero-image">
 
-<img src="book-cover.png" alt="Turtle Care Library">
+<img src="learn-hero.png" alt="Healthy Red-Eared Slider Turtle Basking">
 
 </div>
 
@@ -523,7 +728,7 @@ Find practical turtle care guides organised by topic.
 
 <div class="resource-card">
 
-<h3>🐢 Beginner Guides</h3>
+<h3>Beginner Guides</h3>
 
 <p>
 
@@ -537,7 +742,7 @@ Everything new turtle parents should know before bringing home a turtle.
 
 <div class="resource-card">
 
-<h3>🥬 Feeding & Nutrition</h3>
+<h3>Feeding & Nutrition</h3>
 
 <p>
 
@@ -551,7 +756,7 @@ Vegetables, pellets, protein, calcium and healthy feeding schedules.
 
 <div class="resource-card">
 
-<h3>💧 Water Quality</h3>
+<h3>Water Quality</h3>
 
 <p>
 
@@ -565,7 +770,7 @@ Filters, water changes, cloudy water and aquarium maintenance.
 
 <div class="resource-card">
 
-<h3>☀️ Basking & UVB</h3>
+<h3>Basking & UVB</h3>
 
 <p>
 
@@ -579,7 +784,7 @@ Lighting, heating and creating the perfect basking environment.
 
 <div class="resource-card">
 
-<h3>❤️ Health & Illness</h3>
+<h3>Health & Illness</h3>
 
 <p>
 
@@ -593,7 +798,35 @@ Recognise common turtle illnesses and know when to seek veterinary care.
 
 <div class="resource-card">
 
-<h3>🚑 Emergency Care</h3>
+<h3>Emergency Care</h3>
+
+<div class="resource-card">
+
+<h3>Behaviour</h3>
+
+<p>
+
+Understand turtle behaviour, stress, basking habits, swimming patterns and signs of a healthy turtle.
+
+</p>
+
+<a href="#">Browse Articles →</a>
+
+</div>
+
+<div class="resource-card">
+
+<h3>Equipment Reviews</h3>
+
+<p>
+
+Explore recommended canister filters, UVB lights, heaters, basking platforms and essential turtle equipment.
+
+</p>
+
+<a href="#">Browse Articles →</a>
+
+</div>
 
 <p>
 
@@ -602,6 +835,120 @@ Quick guides for common turtle emergencies and first response.
 </p>
 
 <a href="turtle-emergency-manual.html">Emergency Manual →</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="search-library">
+
+<h2>Search the Turtle Library</h2>
+
+<p>
+
+Looking for something specific? Search our growing collection of turtle care guides.
+
+</p>
+
+<div class="search-box">
+
+<input type="text" placeholder="Search articles (Coming Soon)...">
+
+<button>Search</button>
+
+</div>
+
+</section>
+
+<section class="featured-guides">
+
+<h2>Start Learning</h2>
+
+<p class="featured-subtitle">
+
+Whether you're a first-time turtle parent or looking to improve your turtle's habitat, these guides will help you build a healthier and happier life for your turtle.
+
+</p>
+
+<div class="guide-card">
+
+<h3>The Complete Beginner Turtle Guide</h3>
+
+<p>Everything every new turtle parent should know before bringing a turtle home.</p>
+
+<a href="#">Read Guide →</a>
+
+</div>
+
+<div class="guide-card">
+
+<h3>Ideal Water pH for Turtles</h3>
+
+<p>Understand why water chemistry matters and how to maintain stable pH levels.</p>
+
+<a href="#">Read Guide →</a>
+
+</div>
+
+<div class="guide-card">
+
+<h3>How Often Should You Clean a Canister Filter?</h3>
+
+<p>Keep beneficial bacteria alive while maintaining crystal-clear water.</p>
+
+<a href="#">Read Guide →</a>
+
+</div>
+
+<div class="guide-card">
+
+<h3>Choosing the Right UVB Light</h3>
+
+<p>Everything you need to know about UVB bulbs, basking lights and placement.</p>
+
+<a href="#">Read Guide →</a>
+
+</div>
+
+<div class="guide-card">
+
+<h3>Why Isn't My Turtle Eating?</h3>
+
+<p>Learn the most common reasons turtles lose their appetite and what to do next.</p>
+
+<a href="#">Read Guide →</a>
+
+</div>
+
+<div class="guide-card">
+
+<h3>Signs of a Healthy Turtle</h3>
+
+<p>Learn how to identify a healthy turtle by observing behaviour, shell, eyes and appetite.</p>
+
+<a href="#">Read Guide →</a>
+
+</div>
+
+<div class="guide-card">
+
+<h3>Why Isn't My Turtle Eating?</h3>
+
+<p>Discover the most common reasons turtles suddenly stop eating.</p>
+
+<a href="#">Read Guide →</a>
+
+</div>
+
+<div class="guide-card">
+
+<h3>How Often Should You Clean a Canister Filter?</h3>
+
+<p>Learn the correct maintenance schedule to keep your turtle healthy.</p>
+
+<a href="#">Read Guide →</a>
 
 </div>
 
