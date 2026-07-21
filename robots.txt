@@ -1,0 +1,5 @@
+User-agent: *
+
+Allow: /
+
+Sitemap: https://myaameofficial.github.io/myaame-store/sitemap.xml
