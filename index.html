@@ -55,6 +55,10 @@ align-items:center;
 
 box-shadow:0 2px 10px rgba(0,0,0,.05);
 
+max-width:1400px;
+
+margin:auto;
+
 }
 
 .logo{
@@ -142,9 +146,11 @@ display:flex;
 
 justify-content:space-between;
 
-align-items:center;
+align-items:flex-start;
+padding-top:55px;
 
-padding:70px 8%;
+padding-right:8%;
+padding-bottom:70px;
 
 gap:100px;
 
@@ -334,13 +340,15 @@ transform:translateY(-3px);
 
 .hero-image img{
 
+margin-top:20px;
 width:460px;
 
 aspect-ratio:1/1;
 
 object-fit:cover;
+object-position:center 20%;
 
-border-radius:32px;
+border-radius:24px;
 
 border:8px solid white;
 
@@ -362,7 +370,7 @@ box-shadow:
 }
 .resources{
 
-padding:65px 8%;
+padding:50px 8%;
 
 background:white;
 
@@ -398,9 +406,9 @@ display:grid;
 
 grid-template-columns:repeat(2,minmax(320px,1fr));
 
-gap:36px;
+gap:30px;
 
-margin-top:60px;
+margin-top:35px;
 
 max-width:1100px;
 
@@ -408,13 +416,15 @@ margin-left:auto;
 
 margin-right:auto;
 
+align-items:stretch;
+
 }
 
 .resource-card{
 
 background:white;
 
-padding:40px;
+padding:32px;
 
 border-radius:20px;
 
@@ -423,6 +433,10 @@ box-shadow:0 15px 40px rgba(0,0,0,.06);
 transition:.35s;
 
 border:1px solid #EEF3EE;
+
+display:flex;
+flex-direction:column;
+height:100%;
 
 }
 
@@ -465,6 +479,8 @@ text-decoration:none;
 font-weight:600;
 
 color:#1F5E3B;
+
+margin-top:auto;
 
 }
 .services{
@@ -546,7 +562,7 @@ color:#555;
 }
 .featured-guide{
 
-padding:100px 8%;
+padding:70px 8%;
 
 display:flex;
 
@@ -554,7 +570,7 @@ align-items:center;
 
 justify-content:space-between;
 
-gap:100px;
+gap:60px;
 
 background:white;
 
@@ -566,7 +582,7 @@ border-bottom:1px solid #EEF3EE;
 
 .featured-guide-image img{
 
-width:380px;
+width:340px;
 
 border-radius:22px;
 
@@ -584,7 +600,7 @@ transform:translateY(-8px) rotate(-1deg);
 
 .featured-guide-text{
 
-max-width:550px;
+max-width:620px;
 
 }
 
@@ -851,17 +867,114 @@ justify-content:center;
 margin-top:20px;
 
 }
+@media (max-width: 768px){
+header{
+    flex-direction:column;
+    gap:18px;
+    padding:18px 20px;
+}
+
+nav{
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:16px;
+}
+
+.logo{
+    font-size:24px;
+}
+
+.logo img{
+    width:48px;
+}
+
+.hero{
+    flex-direction:column-reverse;
+    text-align:center;
+    gap:40px;
+    padding:40px 20px;
+}
+
+.hero-text{
+    max-width:100%;
+}
+
+.hero h1{
+    font-size:42px;
+    line-height:1.15;
+}
+
+.hero p{
+    font-size:18px;
+    line-height:1.7;
+}
+
+.hero-role{
+    font-size:16px;
+}
+
+.hero-highlights{
+    justify-content:center;
+}
+
+.buttons{
+    justify-content:center;
+}
+
+.hero-image img{
+    width:100%;
+    max-width:320px;
+    margin:0 auto;
+    display:block;
+}
+.resources-grid{
+    grid-template-columns:1fr;
+    gap:24px;
+}
+
+.featured-guide,
+.founder{
+    flex-direction:column;
+    text-align:center;
+    gap:40px;
+    padding:50px 20px;
+}
+
+.featured-guide-text,
+.founder-text{
+    max-width:100%;
+}
+
+.featured-guide-image img,
+.founder-image img{
+    width:100%;
+    max-width:300px;
+}
+
+.resources,
+.mission,
+.support{
+    padding:50px 20px;
+}
+
+.resources h2,
+.featured-guide h2,
+.founder h2,
+.mission h2,
+.support h2{
+    font-size:34px;
+}
+
+.resources-subtitle,
+.mission p,
+.support p,
+.featured-guide-text p,
+.founder-text p{
+    font-size:18px;
+    line-height:1.7;
+}
+}
 </style>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-S4TZ9XQWGY"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-S4TZ9XQWGY');
-</script>
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-S4TZ9XQWGY"></script>
@@ -927,7 +1040,7 @@ gtag('config', 'G-S4TZ9XQWGY');
 
 <h1>
 
-Helping Turtle Parents Give Their Turtles the Best Life Possible.
+Helping Turtle Parents Raise Healthier, Happier Turtles.
 
 </h1>
 
