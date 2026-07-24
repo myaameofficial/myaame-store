@@ -100,15 +100,18 @@ justify-content:space-between;
 
 align-items:center;
 
-padding:80px 8%;
+padding:70px 8%;
 
-gap:80px;
+gap:100px;
 
+max-width:1400px;
+
+margin:auto;
 }
 
 .hero-text{
 
-max-width:560px;
+max-width:620px;
 
 }
 
@@ -134,12 +137,15 @@ margin-bottom:25px;
 
 font-family:"Playfair Display",serif;
 
-font-size:60px;
+font-size:58px;
 
-line-height:1.15;
+line-height:1.08;
 
-margin-bottom:25px;
+letter-spacing:-1px;
 
+color:#173F2D;
+
+margin-bottom:24px;
 }
 
 .hero p{
@@ -168,9 +174,9 @@ background:#1F5E3B;
 
 color:white;
 
-padding:16px 34px;
+padding:18px 38px;
 
-border-radius:12px;
+border-radius:999px;
 
 text-decoration:none;
 
@@ -193,9 +199,9 @@ border:2px solid #1F5E3B;
 
 color:#1F5E3B;
 
-padding:16px 34px;
+padding:18px 38px;
 
-border-radius:12px;
+border-radius:999px;
 
 text-decoration:none;
 
@@ -205,19 +211,22 @@ font-weight:600;
 
 .hero-image img{
 
-width:360px;
+width:560px;
+max-width:100%;
 
-border-radius:18px;
+border-radius:24px;
 
-box-shadow:0 25px 60px rgba(0,0,0,.15);
+box-shadow:
+0 40px 90px rgba(0,0,0,.14),
+0 18px 45px rgba(31,94,59,.14);
 
+transition:.35s;
 }
 .resources{
 
-padding:90px 8%;
+padding:100px 8%;
 
-background:white;
-
+background:#F4F8F5;
 }
 
 .resources h2{
@@ -258,7 +267,7 @@ gap:30px;
 
 background:white;
 
-padding:35px;
+padding:32px;
 
 border-radius:18px;
 
@@ -275,6 +284,30 @@ transition:all .3s ease;
 transform:translateY(-10px);
 
 box-shadow:0 20px 45px rgba(0,0,0,.12);
+
+}
+
+.category-label{
+
+display:inline-block;
+
+padding:6px 12px;
+
+margin-bottom:16px;
+
+background:#E8F5EC;
+
+color:#1F5E3B;
+
+border-radius:999px;
+
+font-size:13px;
+
+font-weight:700;
+
+letter-spacing:.5px;
+
+text-transform:uppercase;
 
 }
 
@@ -394,7 +427,7 @@ align-items:center;
 
 justify-content:space-between;
 
-gap:80px;
+gap:50px;
 
 background:#F8FAF7;
 
@@ -492,6 +525,12 @@ box-shadow:0 15px 35px rgba(0,0,0,.08);
 
 transition:all .3s ease;
 
+display:flex;
+
+flex-direction:column;
+
+min-height:250px;
+
 }
 
 .guide-card:hover{
@@ -520,15 +559,19 @@ color:#555;
 
 margin-bottom:25px;
 
+flex:1;
+
 }
 
 .guide-card a{
 
 text-decoration:none;
 
-font-weight:600;
+font-weight:700;
 
 color:#1F5E3B;
+
+margin-top:auto;
 
 }
 
@@ -690,7 +733,7 @@ gtag('config', 'G-S4TZ9XQWGY');
 
 <span class="tag">
 
-🐢 Turtle Care Library
+Trusted Turtle Care Library
 
 </span>
 
@@ -726,7 +769,8 @@ Emergency Manual
 
 <div class="hero-image">
 
-<img src="learn-hero.png" alt="Healthy Red-Eared Slider Turtle Basking">
+<img src="turtle-care-library-hero.png"
+alt="Healthy Red-Eared Slider turtle in a natural basking habitat">
 
 </div>
 
@@ -746,6 +790,8 @@ Find practical turtle care guides organised by topic.
 
 <div class="resource-card">
 
+<span class="category-label">Category</span>
+
 <h3>Beginner Guides</h3>
 
 <p>
@@ -759,6 +805,8 @@ Everything new turtle parents should know before bringing home a turtle.
 </div>
 
 <div class="resource-card">
+
+<span class="category-label">Nutrition</span>
 
 <h3>Feeding & Nutrition</h3>
 
@@ -774,6 +822,8 @@ Vegetables, pellets, protein, calcium and healthy feeding schedules.
 
 <div class="resource-card">
 
+<span class="category-label">Aquarium</span>
+
 <h3>Water Quality</h3>
 
 <p>
@@ -787,6 +837,8 @@ Filters, water changes, cloudy water and aquarium maintenance.
 </div>
 
 <div class="resource-card">
+
+<span class="category-label">Lighting</span>
 
 <h3>Basking & UVB</h3>
 
@@ -802,6 +854,8 @@ Lighting, heating and creating the perfect basking environment.
 
 <div class="resource-card">
 
+<span class="category-label">Health</span>
+
 <h3>Health & Illness</h3>
 
 <p>
@@ -816,45 +870,63 @@ Recognise common turtle illnesses and know when to seek veterinary care.
 
 <div class="resource-card">
 
+<span class="category-label">Emergency</span>
+
 <h3>Emergency Care</h3>
 
+<p>
+
+Quick guides for common turtle emergencies, first aid and knowing when immediate veterinary care is needed.
+
+</p>
+
+<a href="turtle-emergency-manual.html">
+
+Emergency Manual →
+
+</a>
+
+</div>
+
 <div class="resource-card">
+
+<span class="category-label">Behaviour</span>
+
+<h3>Behaviour</h3><span class="category-label">Behaviour</span>
 
 <h3>Behaviour</h3>
 
 <p>
 
-Understand turtle behaviour, stress, basking habits, swimming patterns and signs of a healthy turtle.
+Understand basking behaviour, swimming patterns, stress signs, sleeping habits and normal turtle behaviour.
 
 </p>
 
-<a href="#">Browse Articles →</a>
+<a href="#">
+
+Browse Articles →
+
+</a>
 
 </div>
 
 <div class="resource-card">
 
+<span class="category-label">Equipment</span>
+
 <h3>Equipment Reviews</h3>
 
 <p>
 
-Explore recommended canister filters, UVB lights, heaters, basking platforms and essential turtle equipment.
+Explore trusted filters, UVB lights, heaters, basking platforms and other essential turtle care equipment.
 
 </p>
 
-<a href="#">Browse Articles →</a>
+<a href="#">
 
-</div>
+Browse Articles →
 
-<p>
-
-Quick guides for common turtle emergencies and first response.
-
-</p>
-
-<a href="turtle-emergency-manual.html">Emergency Manual →</a>
-
-</div>
+</a>
 
 </div>
 
@@ -889,7 +961,7 @@ Looking for something specific? Search our growing collection of turtle care gui
 Whether you're a first-time turtle parent or looking to improve your turtle's habitat, these guides will help you build a healthier and happier life for your turtle.
 
 </p>
-
+<div class="featured-guides-grid">
 <div class="guide-card">
 
 <h3>The Complete Beginner Turtle Guide</h3>
@@ -971,7 +1043,7 @@ Whether you're a first-time turtle parent or looking to improve your turtle's ha
 </div>
 
 </div>
-
+</div>
 </section>
 
 </body>
