@@ -23,6 +23,9 @@ content="The Red-Eared Slider Food Bible is the complete feeding guide for turtl
 
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
 <style>
 .tag{
 
@@ -567,7 +570,9 @@ line-height:1.8;
 
 margin-bottom:20px;
 
-color:#555;
+color:#2F3A35;
+
+font-size:17px;
 
 }
 
@@ -948,6 +953,207 @@ line-height:1.9;
 color:#555;
 
 margin-bottom:20px;
+
+}
+
+/* ---------- MOBILE RESPONSIVE ---------- */
+
+@media (max-width: 768px) {
+
+header{
+    flex-direction:column;
+    gap:20px;
+    padding:18px 20px;
+}
+
+nav{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+}
+
+nav a{
+    margin:0;
+}
+
+.hero{
+    flex-direction:column;
+    text-align:center;
+    gap:40px;
+    padding:45px 20px;
+}
+
+.hero-text{
+    max-width:100%;
+}
+
+.hero-text h1{
+    font-size:38px;
+}
+
+.hero h2{
+    font-size:24px;
+}
+
+.hero-text p{
+    font-size:17px;
+}
+
+.hero-buttons{
+    flex-direction:column;
+}
+
+.hero-buttons a{
+    width:100%;
+}
+
+.book{
+    width:260px;
+}
+
+section{
+    padding:60px 20px;
+}
+
+.inside h2,
+.preview h2,
+.purchase-options h2,
+.author-story h2,
+.benefits h2,
+.problems h2,
+.final-help h2{
+    font-size:34px;
+}
+
+.problem-card,
+.inside-card,
+.benefit-card,
+.purchase-card{
+    padding:25px;
+}
+
+.support-box{
+    padding:30px 22px;
+}
+
+iframe{
+    height:420px;
+}
+
+.sticky-buy{
+    left:15px;
+    right:15px;
+    bottom:15px;
+    text-align:center;
+}
+
+}
+.purchase-steps{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:30px;
+
+margin-top:40px;
+
+text-align:center;
+
+}
+
+.step{
+
+padding:10px;
+
+transition:.3s;
+
+}
+
+.step:hover{
+
+transform:translateY(-5px);
+
+}
+
+.step:hover .icon{
+
+background:#1F5E3B;
+
+color:white;
+
+transition:.3s;
+
+}
+
+.icon{
+
+width:80px;
+
+height:80px;
+
+margin:0 auto 20px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+border-radius:50%;
+
+background:#EDF6F0;
+
+font-size:38px;
+
+color:#1F5E3B;
+
+box-shadow:0 6px 18px rgba(31,94,59,.08);
+
+}
+
+.step h3{
+
+font-family:"Playfair Display",serif;
+
+font-size:26px;
+
+margin-bottom:12px;
+
+color:#173F2D;
+
+}
+
+.step p{
+
+font-size:17px;
+
+line-height:1.7;
+
+color:#555;
+
+margin-bottom:12px;
+
+}
+
+.step strong{
+
+color:#1F5E3B;
+
+font-size:18px;
+
+}
+
+@media(max-width:768px){
+
+.purchase-steps{
+
+grid-template-columns:1fr;
+
+gap:40px;
+
+}
 
 }
 </style>
@@ -1355,46 +1561,63 @@ Browse real pages from <strong>The Red-Eared Slider Food Bible</strong> before p
 loading="lazy"
 src="food-bible-preview.pdf"
 width="100%"
-height="550"
+height="420px"
 style="border:none;border-radius:18px;box-shadow:0 15px 40px rgba(0,0,0,.12);">
 </iframe>
 
 </section>
 <section class="support-promise">
 
-<div class="support-box">
-
 <h2>
 
-🛡️ Safe & Secure Purchase
+<i class="fa-solid fa-shield-halved"></i>
+
+&nbsp;Safe & Secure Purchase
 
 </h2>
 
-<p>
+<div class="purchase-steps">
 
-After completing your payment, simply send your payment screenshot on WhatsApp to +91 80884 21665.
+    <div class="step">
+        <div class="icon">
+<i class="fa-brands fa-whatsapp"></i>
+</div>
+        <h3>Send Payment</h3>
+        <p>
+            Complete your payment and send the screenshot on WhatsApp.
+        </p>
+        <strong>+91 80884 21665</strong>
+    </div>
 
-</p>
+    <div class="step">
+        <div class="icon">
+<i class="fa-solid fa-file-pdf"></i>
+</div>
+        <h3>Verification</h3>
+        <p>
+            I'll personally verify your payment as quickly as possible.
+        </p>
+    </div>
 
-<p>
-
-Once your payment is verified, your Food Bible PDF will be shared with you as soon as possible.
-
-</p>
-
-<p>
-
-Please send your payment screenshot along with the email address where you'd like to receive the PDF. I'll personally verify your payment and send your copy.
-
-</p>
-
-<p style="font-weight:600;color:#1F5E3B;">
-
-Created by a real turtle keeper. Supported by a real human.
-
-</p>
+    <div class="step">
+        <div class="icon">
+<i class="fa-solid fa-envelope"></i>
+</div>
+        <h3>Receive PDF</h3>
+        <p>
+            Your Food Bible will be sent to your email after verification.
+        </p>
+    </div>
 
 </div>
+
+<hr style="margin:40px 0;border:none;border-top:1px solid #E5ECE6;">
+
+<p style="font-weight:600;color:#1F5E3B;font-size:20px;">
+
+❤️ Created by a real turtle keeper. Supported by a real human.
+
+</p>
 
 </section>
 <section class="purchase-options">
@@ -1415,7 +1638,11 @@ Choose between instant digital access or a premium printed copy.
 
 <p>
 
-After payment, send your payment screenshot and your email address on WhatsApp (+91 80884 21665). Your PDF will be emailed after payment verification.
+<p>
+
+Complete your payment and send the screenshot on WhatsApp with your email address. Your Food Bible PDF will be emailed after payment verification.
+
+</p>
 
 </p>
 
