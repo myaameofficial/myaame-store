@@ -870,3 +870,13 @@ background:#17472D;
 .related-guides a:hover{
     text-decoration:underline;
 }
+
+/* Food Bible CTA spacing */
+.cta-box .btn {
+    display: inline-block;
+    margin-top: 24px;
+}
+
+.cta-box ul {
+    margin-bottom: 24px;
+}
