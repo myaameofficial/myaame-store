@@ -908,7 +908,7 @@ border-radius:18px;
 
 .health-check{
 
-margin:50px 0;
+margin:70px 0;
 
 }
 
@@ -957,7 +957,7 @@ font-weight:600;
 
 .danger-zone{
 
-margin:70px 0;
+margin:90px 0;
 
 }
 
@@ -1003,7 +1003,7 @@ margin-top:0;
 
 .parameter-section{
 
-margin:70px 0;
+margin:90px 0;
 
 }
 
@@ -1129,12 +1129,36 @@ z-index:2;
 
 background:#fff;
 
-padding:22px;
+padding:18px;
 
 border-radius:16px;
 
 box-shadow:0 10px 24px rgba(0,0,0,.08);
 
 width:100%;
+
+}
+
+/* Reusable Section Title */
+
+.section-title{
+
+font-size:2.2rem;
+
+font-weight:700;
+
+margin-bottom:12px;
+
+color:#1F5E3B;
+
+}
+
+.parameter-section h2{
+
+font-size:2.2rem;
+
+color:#1F5E3B;
+
+margin-bottom:10px;
 
 }
