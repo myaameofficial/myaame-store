@@ -747,10 +747,14 @@ background:#17472D;
 }
 
 .article-hero-image img{
-    width:100%;
-    border-radius:24px;
-    display:block;
-    box-shadow:0 30px 70px rgba(0,0,0,.12);
+
+width:100%;
+max-width:500px;
+height:auto;
+display:block;
+margin:40px auto;
+border-radius:18px;
+
 }
 
 /* QUICK ANSWER */
