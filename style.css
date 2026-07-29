@@ -78,18 +78,20 @@ justify-content:space-between;
 
 align-items:center;
 
-padding:70px 8%;
+padding:20px 8% 50px;
 
-gap:100px;
+gap:10px;
 
-max-width:1400px;
+max-width:1500px;
 
 margin:auto;
+
 }
 
 .hero-text{
 
-max-width:620px;
+flex:1.2;
+max-width:720px;
 
 }
 
@@ -187,19 +189,32 @@ font-weight:600;
 
 }
 
+.hero-image{
+
+flex:1;
+
+display:flex;
+
+justify-content:center;
+
+align-items:flex-start;
+
+margin-left:-60px;
+
+}
+
 .hero-image img{
 
-width:560px;
-max-width:100%;
+width:100%;
 
-border-radius:24px;
+max-width:820px;
 
-box-shadow:
-0 40px 90px rgba(0,0,0,.14),
-0 18px 45px rgba(31,94,59,.14);
+margin-top:-70px;
 
-transition:.35s;
+display:block;
+
 }
+
 .resources{
 
 padding:100px 8%;
