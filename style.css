@@ -80,7 +80,7 @@ align-items:center;
 
 gap:80px;
 
-padding:90px 8% 80px;
+padding:90px 8%;
 
 max-width:1400px;
 
@@ -92,7 +92,7 @@ margin:auto;
 
 flex:1;
 
-max-width:620px;
+max-width:500px;
 
 }
 
