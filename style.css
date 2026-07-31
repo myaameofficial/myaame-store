@@ -1270,3 +1270,41 @@ color:#1F5E3B;
 margin-bottom:10px;
 
 }
+
+.affiliate-box{
+
+background:#FFF8E8;
+
+border-left:6px solid #F4B400;
+
+padding:35px;
+
+border-radius:18px;
+
+box-shadow:0 10px 30px rgba(0,0,0,.06);
+
+}
+
+.affiliate-box h2{
+
+font-family:"Playfair Display",serif;
+
+font-size:36px;
+
+color:#173F2D;
+
+margin-bottom:18px;
+
+}
+
+.affiliate-box p{
+
+font-size:18px;
+
+line-height:1.9;
+
+color:#555;
+
+margin-bottom:15px;
+
+}
