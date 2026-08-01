@@ -941,6 +941,210 @@ color:#555;
 margin-bottom:20px;
 
 }
+
+/* ================= MOBILE ================= */
+
+.menu-toggle{
+display:none;
+background:none;
+border:none;
+font-size:30px;
+cursor:pointer;
+color:#1F5E3B;
+margin-left:auto;
+}
+
+@media(max-width:768px){
+
+header{
+padding:15px 20px;
+flex-wrap:wrap;
+}
+
+.logo{
+font-size:22px;
+}
+
+.logo img{
+width:44px;
+}
+
+.menu-toggle{
+display:block;
+}
+
+nav{
+display:none;
+width:100%;
+flex-direction:column;
+gap:0;
+margin-top:15px;
+padding:15px;
+background:#fff;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+nav.show{
+display:flex;
+}
+
+nav a{
+display:block;
+padding:14px 0;
+text-align:center;
+border-bottom:1px solid #eee;
+margin:0;
+}
+
+nav a:last-child{
+border-bottom:none;
+}
+
+/* HERO */
+
+.hero,
+.contact-hero,
+.featured-product,
+.featured-guide,
+.tank-service{
+
+flex-direction:column;
+text-align:center;
+gap:30px;
+padding:35px 20px;
+
+}
+
+.hero-text,
+.contact-left,
+.featured-product-text,
+.featured-guide-text,
+.tank-service-text{
+
+max-width:100%;
+
+}
+
+.hero h1,
+.contact-left h1{
+
+font-size:38px;
+
+}
+
+.hero h2{
+
+font-size:26px;
+
+}
+
+.hero p,
+.contact-left p{
+
+font-size:18px;
+
+}
+
+.buttons,
+.hero-buttons{
+
+flex-direction:column;
+align-items:center;
+
+}
+
+.btn,
+.secondary-btn{
+
+width:100%;
+max-width:320px;
+
+}
+
+/* IMAGES */
+
+.hero-image img,
+.book,
+.contact-right img,
+.featured-product-image img,
+.featured-guide-image img,
+.tank-service-image img{
+
+width:100%;
+max-width:320px;
+height:auto;
+
+}
+
+/* SECTIONS */
+
+section{
+
+padding:50px 20px !important;
+
+}
+
+.resources h2,
+.services h2,
+.inside h2,
+.preview h2,
+.purchase-options h2,
+.problems h2,
+.author-story h2,
+.benefits h2,
+.final-help h2,
+.gear-section h2{
+
+font-size:34px;
+
+}
+
+/* GRIDS */
+
+.resources-grid,
+.services-grid,
+.problem-grid,
+.inside-grid,
+.benefits-grid,
+.purchase-grid,
+.gear-grid,
+.cards{
+
+grid-template-columns:1fr;
+
+}
+
+/* TABLES */
+
+table{
+
+display:block;
+overflow-x:auto;
+
+}
+
+/* IFRAME */
+
+iframe{
+
+height:450px;
+
+}
+
+/* STICKY BUTTON */
+
+.sticky-buy{
+
+left:15px;
+right:15px;
+bottom:15px;
+text-align:center;
+
+}
+
+}
+
 </style>
 
 <!-- Google tag (gtag.js) -->
