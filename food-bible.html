@@ -1248,9 +1248,14 @@ gtag('config', 'G-S4TZ9XQWGY');
 <header>
 
 <a href="index.html" class="logo">
-    <img src="logo1.png" alt="MyAame Logo">
-    <span>My.Aame</span>
+
+<img src="logo1.png" alt="My.Aame Logo">
+
+<span>My.Aame</span>
+
 </a>
+
+<button class="menu-toggle">☰</button>
 
 <nav>
 
@@ -1266,7 +1271,7 @@ gtag('config', 'G-S4TZ9XQWGY');
 
 <a href="about.html">About</a>
 
-<a href="contact.html">Consult</a>
+<a href="contact.html">Contact</a>
 
 </nav>
 
@@ -1856,6 +1861,19 @@ Made with ❤️ to improve turtle welfare worldwide.
 ⚡ Get Your Copy • ₹299
 
 </a>
+<script>
+
+const menu=document.querySelector(".menu-toggle");
+
+const nav=document.querySelector("nav");
+
+menu.addEventListener("click",()=>{
+
+nav.classList.toggle("show");
+
+});
+
+</script>
 
 </body>
 

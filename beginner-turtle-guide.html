@@ -30,6 +30,8 @@ content="Everything every beginner should know before bringing home a Red-Eared 
 
 </a>
 
+<button class="menu-toggle">☰</button>
+
 <nav>
 
 <a href="index.html">Home</a>
@@ -44,7 +46,7 @@ content="Everything every beginner should know before bringing home a Red-Eared 
 
 <a href="about.html">About</a>
 
-<a href="contact.html">Consult</a>
+<a href="contact.html">Contact</a>
 
 </nav>
 
@@ -240,6 +242,19 @@ Browse the Turtle Care Library
     </section>
 
 </main>
+<script>
+
+const menu=document.querySelector(".menu-toggle");
+
+const nav=document.querySelector("nav");
+
+menu.addEventListener("click",()=>{
+
+nav.classList.toggle("show");
+
+});
+
+</script>
 </body>
 
 </html>

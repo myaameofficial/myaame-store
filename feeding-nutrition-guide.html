@@ -31,6 +31,8 @@ content="Learn how to feed a Red-Eared Slider turtle with this beginner-friendly
 
 </a>
 
+<button class="menu-toggle">☰</button>
+
 <nav>
 
 <a href="index.html">Home</a>
@@ -45,7 +47,7 @@ content="Learn how to feed a Red-Eared Slider turtle with this beginner-friendly
 
 <a href="about.html">About</a>
 
-<a href="contact.html">Consult</a>
+<a href="contact.html">Contact</a>
 
 </nav>
 
@@ -382,6 +384,21 @@ Browse the Turtle Care Library
     </section>
 
 </main>
+
+<script>
+
+const menu=document.querySelector(".menu-toggle");
+
+const nav=document.querySelector("nav");
+
+menu.addEventListener("click",()=>{
+
+nav.classList.toggle("show");
+
+});
+
+</script>
+
 </body>
 
 </html>

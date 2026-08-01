@@ -771,6 +771,8 @@ gtag('config', 'G-S4TZ9XQWGY');
 
 </a>
 
+<button class="menu-toggle">☰</button>
+
 <nav>
 
 <a href="index.html">Home</a>
@@ -785,7 +787,7 @@ gtag('config', 'G-S4TZ9XQWGY');
 
 <a href="about.html">About</a>
 
-<a href="contact.html">Consult</a>
+<a href="contact.html">Contact</a>
 
 </nav>
 
@@ -1182,6 +1184,20 @@ Made with ❤️ to improve turtle welfare worldwide.
 </p>
 
 </footer>
+<script>
+
+const menu=document.querySelector(".menu-toggle");
+
+const nav=document.querySelector("nav");
+
+menu.addEventListener("click",()=>{
+
+nav.classList.toggle("show");
+
+});
+
+</script>
+
 </body>
 
 </html>

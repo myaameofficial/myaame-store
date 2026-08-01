@@ -30,6 +30,8 @@ content="Complete Red-Eared Slider water quality guide covering filtration, aqua
 
 </a>
 
+<button class="menu-toggle">☰</button>
+
 <nav>
 
 <a href="index.html">Home</a>
@@ -44,7 +46,7 @@ content="Complete Red-Eared Slider water quality guide covering filtration, aqua
 
 <a href="about.html">About</a>
 
-<a href="contact.html">Consult</a>
+<a href="contact.html">Contact</a>
 
 </nav>
 
@@ -507,6 +509,20 @@ Browse the Turtle Care Library
     </section>
 
 </main>
+<script>
+
+const menu=document.querySelector(".menu-toggle");
+
+const nav=document.querySelector("nav");
+
+menu.addEventListener("click",()=>{
+
+nav.classList.toggle("show");
+
+});
+
+</script>
+
 </body>
 
 </html>

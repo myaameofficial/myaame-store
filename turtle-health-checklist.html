@@ -30,6 +30,8 @@ content="Download the free printable Turtle Health Checklist for Red-Eared Slide
 
 </a>
 
+<button class="menu-toggle">☰</button>
+
 <nav>
 
 <a href="index.html">Home</a>
@@ -44,7 +46,7 @@ content="Download the free printable Turtle Health Checklist for Red-Eared Slide
 
 <a href="about.html">About</a>
 
-<a href="contact.html">Consult</a>
+<a href="contact.html">Contact</a>
 
 </nav>
 
@@ -294,6 +296,20 @@ Water Quality Guide
     </section>
 
 </main>
+<script>
+
+const menu=document.querySelector(".menu-toggle");
+
+const nav=document.querySelector("nav");
+
+menu.addEventListener("click",()=>{
+
+nav.classList.toggle("show");
+
+});
+
+</script>
+
 </body>
 
 </html>

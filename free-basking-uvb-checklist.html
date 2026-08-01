@@ -95,19 +95,30 @@ text-decoration:none;
 <header>
 
 <a href="index.html" class="logo">
+
 <img src="logo1.png" alt="My.Aame Logo">
+
 <span>My.Aame</span>
+
 </a>
+
+<button class="menu-toggle">☰</button>
 
 <nav>
 
 <a href="index.html">Home</a>
+
 <a href="learn.html">Learn</a>
+
 <a href="guides.html">Guides</a>
+
 <a href="products.html">Products</a>
+
 <a href="support.html">Support</a>
+
 <a href="about.html">About</a>
-<a href="contact.html">Consult</a>
+
+<a href="contact.html">Contact</a>
 
 </nav>
 
@@ -162,6 +173,20 @@ Keep this printable checklist near your aquarium so you never forget your turtle
 </div>
 
 </main>
+
+<script>
+
+const menu=document.querySelector(".menu-toggle");
+
+const nav=document.querySelector("nav");
+
+menu.addEventListener("click",()=>{
+
+nav.classList.toggle("show");
+
+});
+
+</script>
 
 </body>
 

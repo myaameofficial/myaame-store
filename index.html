@@ -977,6 +977,60 @@ nav{
     line-height:1.7;
 }
 }
+
+/* ===== Mobile Menu ===== */
+
+.menu-toggle{
+display:none;
+background:none;
+border:none;
+font-size:30px;
+cursor:pointer;
+color:#1F5E3B;
+margin-left:auto;
+}
+
+@media (max-width:768px){
+
+header{
+flex-wrap:wrap;
+}
+
+.menu-toggle{
+display:block;
+}
+
+nav{
+display:none;
+width:100%;
+flex-direction:column;
+gap:0;
+margin-top:15px;
+padding:18px;
+background:white;
+border-radius:18px;
+box-shadow:0 12px 30px rgba(0,0,0,.08);
+}
+
+nav.show{
+display:flex;
+}
+
+nav a{
+display:block;
+width:100%;
+padding:14px 0;
+text-align:center;
+font-size:17px;
+border-bottom:1px solid #EEF3EE;
+}
+
+nav a:last-child{
+border-bottom:none;
+}
+
+}
+
 </style>
 
 <!-- Google tag (gtag.js) -->
@@ -1010,6 +1064,8 @@ gtag('config', 'G-S4TZ9XQWGY');
 
 </a>
 
+<button class="menu-toggle">☰</button>
+
 <nav>
 
 <a href="index.html">Home</a>
@@ -1020,12 +1076,11 @@ gtag('config', 'G-S4TZ9XQWGY');
 
 <a href="products.html">Products</a>
 
-
 <a href="support.html">Support</a>
 
 <a href="about.html">About</a>
 
-<a href="contact.html">Consultation</a>
+<a href="contact.html">Contact</a>
 
 </nav>
 
@@ -1380,6 +1435,20 @@ Helping turtle parents raise healthier turtles through practical education.
 </p>
 
 </footer>
+<script>
+
+const menu=document.querySelector(".menu-toggle");
+
+const nav=document.querySelector("nav");
+
+menu.addEventListener("click",()=>{
+
+nav.classList.toggle("show");
+
+});
+
+</script>
+
 </body>
 
 </html>
