@@ -1674,3 +1674,228 @@ font-size:17px;
 }
 
 }
+
+/* ==========================
+   MOBILE FIX
+========================== */
+
+.menu-toggle{
+display:none;
+background:none;
+border:none;
+font-size:30px;
+color:#1F5E3B;
+cursor:pointer;
+margin-left:auto;
+}
+
+@media(max-width:768px){
+
+header{
+padding:15px;
+flex-wrap:wrap;
+}
+
+.logo{
+font-size:22px;
+}
+
+.logo img{
+width:42px;
+}
+
+.menu-toggle{
+display:block;
+}
+
+nav{
+display:none;
+width:100%;
+flex-direction:column;
+gap:0;
+margin-top:15px;
+padding:18px;
+background:#fff;
+border-radius:16px;
+box-shadow:0 12px 30px rgba(0,0,0,.08);
+}
+
+nav.show{
+display:flex;
+}
+
+nav a{
+margin:0;
+padding:14px 0;
+text-align:center;
+border-bottom:1px solid #eee;
+}
+
+nav a:last-child{
+border-bottom:none;
+}
+
+.hero,
+.featured-product,
+.featured-guide,
+.tank-service,
+.contact-hero{
+
+flex-direction:column;
+text-align:center;
+padding:35px 20px;
+gap:30px;
+
+}
+
+.hero-text,
+.featured-product-text,
+.featured-guide-text,
+.contact-left,
+.tank-service-text{
+
+max-width:100%;
+
+}
+
+.hero h1,
+.contact-left h1{
+
+font-size:40px;
+line-height:1.2;
+
+}
+
+.hero h2{
+
+font-size:26px;
+
+}
+
+.hero p,
+.contact-left p,
+.featured-product-text p,
+.tank-service-text p{
+
+font-size:18px;
+
+}
+
+.buttons,
+.hero-buttons{
+
+flex-direction:column;
+width:100%;
+
+}
+
+.btn,
+.secondary-btn{
+
+width:100%;
+min-width:unset;
+
+}
+
+.hero-image img,
+.featured-product-image img,
+.featured-guide-image img,
+.contact-right img,
+.book,
+.tank-service-image img{
+
+width:100%;
+max-width:320px;
+height:auto;
+
+}
+
+.resources,
+.services,
+.preview,
+.purchase-options,
+.benefits,
+.problems,
+.inside,
+.gear-section,
+.author-story,
+.final-help,
+.support-promise,
+.before-consultation,
+.consultation-process,
+.faq{
+
+padding:55px 20px;
+
+}
+
+.resources h2,
+.services h2,
+.preview h2,
+.purchase-options h2,
+.benefits h2,
+.problems h2,
+.inside h2,
+.gear-section h2,
+.author-story h2,
+.final-help h2,
+.before-consultation h2,
+.consultation-process h2,
+.faq h2{
+
+font-size:36px;
+
+}
+
+.resources-grid,
+.problem-grid,
+.benefits-grid,
+.inside-grid,
+.preview-grid,
+.purchase-grid,
+.process-grid,
+.services-grid,
+.gear-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.resource-card,
+.problem-card,
+.benefit-card,
+.inside-card,
+.purchase-card,
+.process-card,
+.service-card,
+.gear-card{
+
+padding:22px;
+min-height:auto;
+
+}
+
+iframe{
+
+width:100%;
+height:500px;
+
+}
+
+table{
+
+display:block;
+overflow-x:auto;
+
+}
+
+.sticky-buy{
+
+left:15px;
+right:15px;
+bottom:15px;
+text-align:center;
+
+}
+
+}
