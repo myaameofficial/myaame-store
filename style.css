@@ -1309,75 +1309,258 @@ margin-bottom:15px;
 
 }
 
-/* ===========================
+/* ==========================================
    MOBILE RESPONSIVE
-=========================== */
+========================================== */
 
-@media (max-width:768px){
+@media screen and (max-width:768px){
 
 header{
-flex-direction:column;
-gap:20px;
+padding:14px 16px;
+flex-wrap:wrap;
+}
+
+.logo{
+font-size:22px;
+gap:10px;
+}
+
+.logo img{
+width:42px;
 }
 
 nav{
-flex-wrap:wrap;
+width:100%;
 justify-content:center;
 gap:14px;
+margin-top:10px;
+flex-wrap:wrap;
+}
+
+nav a{
+font-size:13px;
 }
 
 .hero,
-.featured-guide{
+.featured-product,
+.featured-guide,
+.tank-service{
+
 flex-direction:column;
+padding:35px 20px;
+gap:30px;
 text-align:center;
+
 }
 
 .hero-text,
-.featured-guide-text{
+.featured-product-text,
+.featured-guide-text,
+.tank-service-text{
+
 max-width:100%;
+
 }
 
 .hero h1{
-font-size:40px;
+
+font-size:42px;
+line-height:1.15;
+
 }
 
-.hero p{
+.hero p,
+.featured-product-text p,
+.featured-guide-text p,
+.tank-service-text p{
+
 font-size:18px;
+line-height:1.7;
+
 }
 
 .buttons{
+
 flex-direction:column;
-align-items:center;
+width:100%;
+gap:14px;
+
 }
 
-.hero-image{
-margin-left:0;
-padding:15px;
+.btn,
+.secondary-btn{
+
+width:100%;
+min-width:unset;
+
+}
+
+.hero-image,
+.featured-product-image,
+.featured-guide-image,
+.tank-service-image{
+
+display:flex;
+justify-content:center;
+
 }
 
 .hero-image img{
-margin-top:0;
+
+max-width:100%;
+width:100%;
+margin:0;
+border-radius:18px;
+
 }
 
-.book-grid,
+.featured-product-image img,
+.featured-guide-image img,
+.tank-service-image img{
+
+width:100%;
+max-width:340px;
+
+}
+
+.resources,
+.services,
+.search-library,
+.featured-guides,
+.gear-section{
+
+padding:50px 20px;
+
+}
+
+.resources h2,
+.services h2,
+.search-library h2,
+.featured-guides h2,
+.gear-section h2{
+
+font-size:38px;
+
+}
+
+.resources-subtitle,
+.services-subtitle,
+.featured-subtitle,
+.search-library p,
+.gear-subtitle{
+
+font-size:17px;
+
+}
+
 .resources-grid,
-.services-grid{
+.services-grid,
+.featured-guides-grid,
+.gear-grid{
+
 grid-template-columns:1fr;
+
 }
 
-.product-table{
-display:block;
-overflow-x:auto;
-white-space:nowrap;
+.resource-card,
+.service-card,
+.guide-card,
+.gear-card{
+
+padding:22px;
+
 }
 
 .search-box{
+
 flex-direction:column;
+
 }
 
 .search-box input,
 .search-box button{
+
 width:100%;
+
+}
+
+.article-page{
+
+padding:20px 14px 60px;
+
+}
+
+.article-hero{
+
+padding:24px;
+
+}
+
+.article-hero h1{
+
+font-size:38px;
+
+}
+
+.article-content{
+
+padding:24px;
+
+}
+
+.article-content h2{
+
+font-size:32px;
+
+}
+
+.article-content h3{
+
+font-size:24px;
+
+}
+
+.quick-answer,
+.key-takeaways,
+.alert-card{
+
+padding:22px;
+
+}
+
+.lifespan-table{
+
+display:block;
+overflow-x:auto;
+
+}
+
+.parameter-grid,
+.check-grid,
+.danger-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.timeline-item{
+
+gap:14px;
+
+}
+
+.timeline-dot{
+
+width:38px;
+height:38px;
+font-size:14px;
+
+}
+
+footer{
+
+padding:24px 16px;
+
 }
 
 }
