@@ -481,8 +481,8 @@ color:#1F5E3B;
 
 .contact-right img{
 
-width:420px;
-height:420px;
+width:360px;
+height:360px;
 object-fit:cover;
 border-radius:50%;
 border:8px solid white;
@@ -581,6 +581,128 @@ padding:35px;
 margin-top:80px;
 
 }
+
+/* ===== MOBILE ===== */
+
+.menu-toggle{
+display:none;
+background:none;
+border:none;
+font-size:30px;
+cursor:pointer;
+color:#1F5E3B;
+margin-left:auto;
+}
+
+@media(max-width:768px){
+
+header{
+padding:15px 20px;
+flex-wrap:wrap;
+}
+
+.logo{
+font-size:22px;
+}
+
+.logo img{
+width:44px;
+}
+
+.menu-toggle{
+display:block;
+}
+
+nav{
+display:none;
+width:100%;
+flex-direction:column;
+gap:0;
+margin-top:15px;
+padding:15px;
+background:#fff;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+nav.show{
+display:flex;
+}
+
+nav a{
+display:block;
+padding:14px 0;
+text-align:center;
+border-bottom:1px solid #eee;
+margin:0;
+}
+
+nav a:last-child{
+border-bottom:none;
+}
+
+.contact-hero{
+flex-direction:column;
+text-align:center;
+padding:40px 20px;
+gap:35px;
+}
+
+.contact-left,
+.contact-right{
+max-width:100%;
+flex:none;
+}
+
+.contact-left h1{
+font-size:40px;
+}
+
+.contact-left p{
+font-size:18px;
+}
+
+.contact-right img{
+width:280px;
+height:280px;
+}
+
+.buttons{
+flex-direction:column;
+align-items:center;
+}
+
+.btn,
+.secondary-btn{
+width:100%;
+max-width:320px;
+text-align:center;
+}
+
+.story,
+.belief,
+.companions,
+.about-cta{
+padding:55px 20px;
+}
+
+.story h2,
+.about-cta h2{
+font-size:34px;
+}
+
+.story p,
+.about-cta p{
+font-size:18px;
+}
+
+footer{
+margin-top:0;
+padding:30px 20px;
+}
+
+}
+
 </style>
 
 
@@ -614,8 +736,9 @@ gtag('config', 'G-S4TZ9XQWGY');
 <span>My.Aame</span>
 
 </a>
-
 <button class="menu-toggle">☰</button>
+
+<nav>
 
 <nav>
 
@@ -631,7 +754,7 @@ gtag('config', 'G-S4TZ9XQWGY');
 
 <a href="about.html">About</a>
 
-<a href="contact.html">Contact</a>
+<a href="contact.html">Consult</a>
 
 </nav>
 
