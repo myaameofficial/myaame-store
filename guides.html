@@ -100,9 +100,9 @@ justify-content:space-between;
 
 align-items:center;
 
-padding:70px 8%;
+padding:50px 8%;
 
-gap:90px;
+gap:60px;
 
 }
 
@@ -249,7 +249,7 @@ margin-bottom:60px;
 
 display:grid;
 
-grid-template-columns:repeat(2,minmax(320px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
 
 gap:35px;
 
@@ -279,7 +279,7 @@ display:flex;
 
 flex-direction:column;
 
-min-height:530px;
+min-height:480px;
 
 }
 .resource-card:hover{
@@ -532,6 +532,154 @@ padding:35px;
 margin-top:80px;
 
 }
+
+/* ================= MOBILE ================= */
+
+.menu-toggle{
+display:none;
+background:none;
+border:none;
+font-size:30px;
+cursor:pointer;
+color:#1F5E3B;
+margin-left:auto;
+}
+
+@media(max-width:768px){
+
+header{
+padding:15px 20px;
+flex-wrap:wrap;
+}
+
+.logo{
+font-size:22px;
+}
+
+.logo img{
+width:44px;
+}
+
+.menu-toggle{
+display:block;
+}
+
+nav{
+display:none;
+width:100%;
+flex-direction:column;
+gap:0;
+margin-top:15px;
+padding:15px;
+background:#fff;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+nav.show{
+display:flex;
+}
+
+nav a{
+display:block;
+padding:14px 0;
+text-align:center;
+border-bottom:1px solid #eee;
+margin:0;
+}
+
+nav a:last-child{
+border-bottom:none;
+}
+
+.hero{
+flex-direction:column;
+text-align:center;
+padding:40px 20px;
+gap:35px;
+}
+
+.hero-text{
+max-width:100%;
+}
+
+.hero h1{
+font-size:42px;
+line-height:1.15;
+}
+
+.hero p{
+font-size:18px;
+}
+
+.buttons{
+flex-direction:column;
+align-items:center;
+}
+
+.btn,
+.secondary-btn{
+width:100%;
+max-width:320px;
+}
+
+.hero-image img{
+width:100%;
+max-width:340px;
+}
+
+.resources{
+padding:55px 20px;
+}
+
+.resources h2{
+font-size:34px;
+}
+
+.resources-subtitle{
+font-size:18px;
+margin-bottom:35px;
+}
+
+.resources-grid{
+grid-template-columns:1fr;
+gap:25px;
+}
+
+.resource-card{
+min-height:auto;
+padding:24px;
+}
+
+.resource-card img{
+width:180px !important;
+}
+
+section{
+padding-left:20px !important;
+padding-right:20px !important;
+}
+
+section h2{
+font-size:34px !important;
+}
+
+section p{
+font-size:18px !important;
+}
+
+footer{
+padding:30px 20px;
+}
+
+nav{
+z-index:999;
+position:relative;
+}
+
+}
+
+
 </style>
 
 
@@ -827,14 +975,17 @@ Made with ❤️ to improve turtle welfare worldwide.
 <script>
 
 const menu=document.querySelector(".menu-toggle");
-
 const nav=document.querySelector("nav");
+
+if(menu && nav){
 
 menu.addEventListener("click",()=>{
 
 nav.classList.toggle("show");
 
 });
+
+}
 
 </script>
 
