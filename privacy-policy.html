@@ -438,8 +438,8 @@ background:#F8FAF7;
 
 .contact-left{
 
-flex:1;
-max-width:650px;
+max-width:900px;
+margin:auto;
 
 }
 
@@ -455,7 +455,7 @@ align-items:flex-start;
 .contact-left h1{
 
 font-family:"Playfair Display",serif;
-font-size:64px;
+font-size:56px;
 line-height:1.1;
 margin:25px 0;
 color:#173F2D;
@@ -464,7 +464,7 @@ color:#173F2D;
 
 .contact-left p{
 
-font-size:22px;
+font-size:20px;
 line-height:1.8;
 color:#555;
 
@@ -580,6 +580,99 @@ padding:35px;
 margin-top:80px;
 
 }
+
+/* ===== MOBILE ===== */
+
+.menu-toggle{
+display:none;
+background:none;
+border:none;
+font-size:30px;
+cursor:pointer;
+color:#1F5E3B;
+margin-left:auto;
+}
+
+@media(max-width:768px){
+
+header{
+padding:15px 20px;
+flex-wrap:wrap;
+}
+
+.logo{
+font-size:22px;
+}
+
+.logo img{
+width:44px;
+}
+
+.menu-toggle{
+display:block;
+}
+
+nav{
+display:none;
+width:100%;
+flex-direction:column;
+gap:0;
+margin-top:15px;
+padding:15px;
+background:#fff;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+nav.show{
+display:flex;
+}
+
+nav a{
+display:block;
+padding:14px 0;
+text-align:center;
+border-bottom:1px solid #eee;
+margin:0;
+}
+
+nav a:last-child{
+border-bottom:none;
+}
+
+.contact-hero{
+padding:40px 20px;
+display:block;
+}
+
+.contact-left{
+max-width:100%;
+}
+
+.contact-left h1{
+font-size:40px;
+}
+
+.contact-left h2{
+font-size:26px !important;
+}
+
+.contact-left p{
+font-size:18px;
+line-height:1.8;
+}
+
+.quote{
+font-size:17px;
+}
+
+footer{
+margin-top:0;
+padding:30px 20px;
+}
+
+}
+
 </style>
 
 

@@ -588,6 +588,94 @@ padding:35px;
 margin-top:80px;
 
 }
+
+/* ===== MOBILE ===== */
+
+.menu-toggle{
+display:none;
+background:none;
+border:none;
+font-size:30px;
+cursor:pointer;
+color:#1F5E3B;
+margin-left:auto;
+}
+
+@media(max-width:768px){
+
+header{
+padding:15px 20px;
+flex-wrap:wrap;
+}
+
+.logo{
+font-size:22px;
+}
+
+.logo img{
+width:44px;
+}
+
+.menu-toggle{
+display:block;
+}
+
+nav{
+display:none;
+width:100%;
+flex-direction:column;
+gap:0;
+margin-top:15px;
+padding:15px;
+background:#fff;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+nav.show{
+display:flex;
+}
+
+nav a{
+display:block;
+padding:14px 0;
+text-align:center;
+border-bottom:1px solid #eee;
+}
+
+nav a:last-child{
+border-bottom:none;
+}
+
+.contact-hero{
+display:block;
+padding:35px 20px;
+}
+
+.contact-hero>div{
+padding:30px !important;
+}
+
+h1{
+font-size:40px !important;
+}
+
+h2{
+font-size:24px !important;
+}
+
+p{
+font-size:18px !important;
+line-height:1.8;
+}
+
+footer{
+padding:30px 20px;
+margin-top:0;
+}
+
+}
+
 </style>
 
 <!-- Google tag (gtag.js) -->
@@ -653,8 +741,6 @@ max-width:900px;
 margin:auto;
 width:100%;">
 
-<div style="max-width:900px;margin:auto;width:100%;">
-</div>
 </div>
 
 <span class="tag">
@@ -706,7 +792,9 @@ My.Aame may update these Terms & Conditions at any time. Continued use of the we
 <h2 style="margin-top:35px;font-size:30px;font-family:'Playfair Display',serif;color:#173F2D;">Contact</h2>
 
 <p>
-Questions regarding these Terms & Conditions can be sent through our Contact page or by email at <strong>herpassistturtlehelper@gmail.com</strong>.
+Questions regarding these Terms & Conditions can be sent through our Contact page or by email at <a href="mailto:herpassistturtlehelper@gmail.com" style="color:#1F5E3B;text-decoration:none;">
+<strong>herpassistturtlehelper@gmail.com</strong>
+</a>
 </p>
 
 </div>
