@@ -1900,3 +1900,8 @@ text-align:center;
 }
 
 }
+
+.footer-logo img{
+width:42px !important;
+height:42px;
+}
